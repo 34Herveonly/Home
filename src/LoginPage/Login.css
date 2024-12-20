@@ -1,0 +1,211 @@
+/* General Reset: Ensure page covers full height */
+html, body {
+  height: 100%; /* Make sure the body fills the whole screen */
+  margin: 0;
+  scrollbar-color: #33ff33;
+}
+
+/* Navigation Bar */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  height: 70px;
+}
+
+.nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 19px;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #00b300;
+  text-decoration: underline;
+}
+
+.nav ul li button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 11px 15px;
+}
+
+.nav ul li button:hover {
+  color: #00b300;
+  border: 2px solid #00b300;
+  border-radius: 10px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  margin-top: 40px;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg,transparent, transparent);
+  color: #fff;
+  flex-grow: 1; /* This makes the welcome section grow to take up remaining space */
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top:70px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-section .btn {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.welcome-section .btn:hover {
+  background: #00b300;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg,transparent,#4674b9);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer .contact ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer .contact ul li a {
+  font-size: 2.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer .contact ul li a:hover {
+  color: #33ff33;
+}
+
+.footer .other-options ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.footer .other-options ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer .other-options ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Flex container for notices */
+.notices-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;  /* Adjusts space between notices */
+  margin-top: 30px;
+  width: 100%;
+}
+
+.notice-item {
+  display: grid;
+  place-items: center;  /* Centers the content inside each grid item */
+  background-color: transparent;
+  border: 1px solid #33ff33;
+  color: #fff;
+  border-radius: 10px;
+  width: calc(33.33% - 20px);  /* 3 items per row, with gaps */
+  padding: 20px;
+  box-sizing: border-box;
+  word-wrap: break-word;  /* Allows text to break within the box */
+  overflow: hidden; /* Prevents overflow if the text is too large */
+}
+
+.notice-item h2{
+  color: #33ff33;
+  text-decoration: underline;
+  margin-bottom:30px;
+  line-height: 5px;
+}
+
+.notice-item span{
+   color: #33ff33;
+}
+
+.notice-item p {
+  font-size: 18px;
+  margin: 0;
+}
+/* Responsive Design for Quotes/Notices */
+@media (max-width: 768px) {
+  .notice-item {
+    width: calc(50% - 20px);  /* 2 items per row for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .notice-item {
+    width: 100%;  /* 1 item per row for small screens */
+  }
+}
+
+.other-options p{
+  bottom: 0;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}

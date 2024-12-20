@@ -1,0 +1,79 @@
+body {
+  background: #151515;
+  color: #fff;
+}
+
+.notice-title {
+  margin-top: 105px;
+  font-size: 23px;
+}
+
+.notice-title h2 {
+  color: #00b300;
+  font-size: 27px;
+  margin: 8px 15px;
+}
+
+.notice-form {
+  margin-top: 45px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  margin: 0 20px;
+  width: 550px;
+  margin-left: 25%;
+  border-radius: 15px;
+  
+}
+
+.notice-form label {
+  display: block;
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.notice-form input {
+  width: 350px;
+  max-width: 520px;
+  height: 40px;
+  background: transparent;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 25px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.notice-form textarea {
+  width:350px;
+  max-width:530px;  /* Same width as the input */
+  height: 120px; /* Adjust height as needed */
+  border-radius: 15px;
+  padding: 25px 20px;
+  font-size: 15.5px;
+  background-color: transparent;  /* Match the background color */
+  border: 1px solid rgba(255, 255, 255); /* Similar border to the inputs */
+  color: #fff;  /* Text color */
+  margin-bottom: 10px;  
+}
+
+.notice-form button {
+  width: 350px;
+  max-width: 520px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #00b300;  /* Green button background */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;  /* Space between the button and the input */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16%;
+}
+
+.notice-form button:hover {
+  background-color: #009900;  /* Darken button color on hover */
+}
